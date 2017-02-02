@@ -1,0 +1,85 @@
+// variables - colors
+
+$main-text: #2d313f // main text
+$link: #d36868 // anchor tags
+$background: #e7eaf0 // body background color
+
+$color-1: #2d313f // blue
+$color-2: #00838F // blue2
+$color-3: #ffffff // white
+
+// variables - fonts 
+
+$primary-font: 'Fira Sans'
+
+// rem fallback - credits: http://zerosixthree.se/
+
+@function calculateRem($size)
+    $remSize: $size / 16px
+    @return $remSize * 1rem
+
+
+@mixin font-size($size) 
+    font-size: $size
+    font-size: calculateRem($size)
+
+
+body 
+	font: 
+		size: 100%
+		family: $primary-font
+	
+	color: $main-text
+	background-color: $background
+
+
+
+#google-container 
+    position: relative
+    max-width: 400px
+    height: 420px
+    background-color: $background
+    
+
+#cd-google-map 
+	position: relative
+    
+
+	address
+        
+		position: absolute
+		width: 400px
+		bottom: 0
+		left: 0
+		padding: 1em 1em
+		background-color: rgba($color-2, .8)
+		color: $color-3
+		@include font-size(13px)
+
+			
+
+#cd-zoom-in, #cd-zoom-out 
+	height: 32px
+	width: 32px
+	cursor: pointer
+	margin-left: 10px
+	background-color: rgba($color-2, .8)
+	background-repeat: no-repeat
+	background-size: 32px 64px
+	background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-controller.svg')
+
+	.no-touch &:hover 
+		background-color: rgba($color-2, 1)
+	
+
+	
+#cd-zoom-in 
+	background-position: 50% 0
+	margin-top: 10px
+	margin-bottom: 1px
+	
+
+
+#cd-zoom-out 
+	background-position: 50% -32px
+

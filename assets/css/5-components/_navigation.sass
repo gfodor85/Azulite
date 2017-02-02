@@ -1,0 +1,74 @@
+.menubar
+    position: fixed
+    top: 0
+    right: 0px
+    margin: 10px
+    padding: 10px
+    z-index: 3
+    cursor: pointer
+    
+    .fa-bars
+        float: right
+        color: $font-color
+        font-size: 30px !important
+        
+        &:hover
+            color: #cbcbcb
+            transition: all ease 0.35s
+
+.slide_panel
+    max-width: 300px
+    height: 450px
+    position: fixed
+    top: 0
+    right: -300px
+    background-color: rgba(0, 131, 143, 0.62)
+    box-shadow: $shadow_menu
+    float: left
+    z-index: 1000
+    transition-timing-function: ease
+
+.menu
+    font-family: 'Firasans_hair'
+    text-transform: uppercase
+    font-size: 16px
+    width: 300px
+    height: auto
+    display: block
+    margin: 0
+    padding: 100px 0 0 0
+    list-style: none
+    font-color: $font-color
+
+    .menu_item
+        //width: 300px
+        height: 3em
+        display: block
+        font-size: 22px
+        text-align: center
+        color: $font-color
+
+        a
+            text-decoration: none
+            
+
+        &:hover
+            color: #cbcbcb
+            text-decoration: none
+            transition: all ease 0.35s
+
+//.menu-text
+    color: #fff
+    width: 150px
+    height: 35px
+    font-size: 30px
+    display: block
+    position: fixed
+    top: 0
+    left: 0px
+    padding: 6px 10px 14px
+    margin: 10px
+    z-index: 1001
+    transition: ease 0.35s
+    background-color: #3f51b5
+    text-indent: 69px

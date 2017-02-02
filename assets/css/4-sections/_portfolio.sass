@@ -1,0 +1,129 @@
+#portfolio
+    height: 600px
+    padding-top: 50px
+
+.carousel-inner
+    position: relative
+    height: 500px
+    
+    img
+        width: 628px
+        margin: 0 auto
+        box-shadow: $shadow20
+
+#mycarousel
+    margin-bottom: 50px
+    color: $secondary-color
+    
+.carousel-control
+    background: none !important 
+    color: #000
+    font-size: 2.3em
+    
+    &:hover
+        color: $secondary-color
+    
+    .fa
+        color: $secondary-color
+        position: absolute
+        top: 50%
+    
+
+        
+@media (max-width: 991px)
+    #portfolio
+        height: 550px
+        padding-top: 40px
+    
+    .carousel-inner
+        position: relative
+        height: 450px
+    
+    .left
+        position: absolute
+        left: -40px
+    
+    .right
+        position: absolute
+        right: -40px !important
+
+        
+@media (max-width: 768px)
+    #portfolio
+        height: 300px
+        padding-top: 40px
+    
+    .carousel-inner
+        position: relative
+        height: 180px
+    
+    .carousel-control
+        display: none
+            
+    
+.carousel-indicators
+    position: absolute
+    bottom: 20px
+    margin-top: 50px
+    margin-bottom: 0px
+    height: 50px
+    
+
+
+    li
+        width: 80px
+        height: 80px
+        cursor: pointer
+        border: 4px solid $secondary-color
+        border-radius: 50%
+        opacity: 0.6
+        overflow: hidden
+        transition: all .4s ease-in
+        box-shadow: $shadow20
+
+    .active
+        border: 4px solid $secondary-color
+        width: 100px
+        height: 100px
+        opacity: 1
+        transition: all .2s
+        
+        
+@media (max-width: 991px)
+    .carousel-indicators
+        position: relative
+        right: 50%
+        top: auto
+        margin-top: 20px
+        margin-bottom: 20px
+        
+        li
+            width: 45px
+            height: 45px
+            border: 2px solid $secondary-color
+        
+        .active
+            width: 50px
+            height: 50px
+            border: 2px solid $secondary-color
+        
+        
+@media (max-width: 544px)
+
+     .carousel-indicators
+        position: relative
+        right: 50%
+        top: auto
+        margin-top: 20px
+        margin-bottom: 20px
+
+        li
+            width: 30px
+            height: 30px
+            border: 2px solid $secondary-color
+           
+        .active
+            width: 30px
+            height: 30px
+            border: 2px solid $secondary-color
+            
